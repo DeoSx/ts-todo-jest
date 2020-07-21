@@ -10,12 +10,10 @@ const NewTask: React.FC = () => {
     event.preventDefault()
     changeState({ type: ActionType.ADD, payload: state.newTask })
     changeState({ type: ActionType.CHANGE, payload: '' })
-    console.log(state)
   }
 
   const changeTask = (value: string) => {
     changeState({ type: ActionType.CHANGE, payload: value })
-    console.log(state)
   }
 
   return (
